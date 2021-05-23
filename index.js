@@ -18,18 +18,17 @@ wrapGifts(gifts); */
 function writeCards(name, event) {
     let message = []
     for (let a = 0; a < name.length; a++) {
-        console.log(message.push(`Thank you, ${name[a]}, for the wonderful surprise gift!`));
+        message.push(`Thank you, ${name[a]}, for the wonderful surprise gift!`);
     }
     return message;
 }
 writeCards();
 
-function countDown() {
-    let countDown = 10; 
-        while (countDown > -1) {
-            console.log(countDown--);
+function countDown(start) { 
+    while (start > 0) {
+         console.log(start);
+         start -= 1;
         }
-        return countDown;
+        console.log(start);
 }
 
-countDown;
